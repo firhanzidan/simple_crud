@@ -30,10 +30,10 @@ class CreateContact extends Component {
       }else {
         swal(
             "User Created!",
-            "Nama : " +
-              this.props.getResponDataUser.nama +
-              " , Umur : " +
-              this.props.getResponDataUser.umur,
+            "firstName : " +
+              this.props.getResponDataUser.firstName +
+              " , lastname : " +
+              this.props.getResponDataUser.lastname,
             "success"
           );
       }

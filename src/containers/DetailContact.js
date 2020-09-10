@@ -14,14 +14,24 @@ const DetailContact = (props) => {
     <Table striped>
       <tbody>
         <tr>
-          <td width="200">Nama</td>
+          <td width="200">first name</td>
           <td width="10">:</td>
-          <td>{props.getUserDetail.nama}</td>
+          <td>{props.getUserDetail.firstName}</td>
         </tr>
         <tr>
-          <td width="200">No HP</td>
+          <td width="200">last name</td>
           <td width="10">:</td>
-          <td>{props.getUserDetail.nohp}</td>
+          <td>{props.getUserDetail.lastName}</td>
+        </tr>
+        <tr>
+          <td width="200">age</td>
+          <td width="10">:</td>
+          <td>{props.getUserDetail.age}</td>
+        </tr>
+        <tr>
+          <td width="200">photo</td>
+          <td width="10">:</td>
+          <td>{props.getUserDetail.photo}</td>
         </tr>
 
       </tbody>

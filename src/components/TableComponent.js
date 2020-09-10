@@ -1,49 +1,3 @@
-// import React from 'react';
-// import { Table, Container, Button } from 'reactstrap';
-
-// const TableComponent = (props) => {
-//   return (
-//     <Table>
-//         <Container>
-//       <thead>
-//         <tr>
-//           <th>#</th>
-//           <th>First Name</th>
-//           <th>Last Name</th>
-//           <th>Number</th>
-//           <th></th>
-//         </tr>
-//       </thead>
-//       <tbody>
-//         <tr>
-//           <th scope="row">1</th>
-//           <td>Mark</td>
-//           <td>Otto</td>
-//           <td>08111111111</td>
-//           <td><Button color="info">EDIT</Button> <Button color="danger">DELETE</Button></td>
-//         </tr>
-//         <tr>
-//           <th scope="row">2</th>
-//           <td>Jacob</td>
-//           <td>Thornton</td>
-//           <td>0822222222</td>
-//           <td><Button color="info">EDIT</Button> <Button color="danger">DELETE</Button></td>
-//         </tr>
-//         <tr>
-//           <th scope="row">3</th>
-//           <td>Larry</td>
-//           <td>the Bird</td>
-//           <td>08333333333</td>
-//           <td><Button color="info">EDIT</Button> <Button color="danger">DELETE</Button></td>
-//         </tr>
-//       </tbody>
-//       </Container>
-//     </Table>
-//   );
-// }
-
-// export default TableComponent;
-
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
 import { Container, Button, Row, Col, Spinner } from "reactstrap";
@@ -103,19 +57,29 @@ const TableComponent = (props) => {
       },
     },
     {
-      dataField: "name",
-      text: "Name",
+      dataField: "firstName",
+      text: "firstName",
       sort: true,
     },
     {
-      dataField: "phone",
-      text: "Phone",
+      dataField: "lastName",
+      text: "lastName",
+      sort: true,
+    },
+    {
+      dataField: "age",
+      text: "age",
+      sort: true,
+    },
+    {
+      dataField: "photo",
+      text: "photo",
       sort: true,
     },
     {
       dataField: "link",
       text: "Action",
-      formatter: (rowContent, row) => {
+      formatter: ( row) => {
         return (
           <div>
             <Link to={"detail/" + row.id}>
@@ -146,7 +110,7 @@ const TableComponent = (props) => {
         <ToolkitProvider
           bootstrap4
           keyField="id"
-          data={props.getUsersList}
+          data={[props.getUsersList]}
           columns={columns}
           defaultSorted={defaultSorted}
           search

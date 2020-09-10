@@ -53,9 +53,19 @@ class FormComponent extends Component {
             <FormGroup>
               <Field
                 type="text"
-                name="nama"
+                name="firstname"
                 component={renderField}
-                label="Nama :"
+                label="firstname:"
+              />
+            </FormGroup>
+          </Col>
+          <Col md={6}>
+            <FormGroup>
+              <Field
+                type="text"
+                name="lastname"
+                component={renderField}
+                label="lastname :"
               />
             </FormGroup>
           </Col>
@@ -64,9 +74,19 @@ class FormComponent extends Component {
             <FormGroup>
               <Field
                 type="text"
-                name="nohp"
+                name="age"
                 component={renderField}
-                label="No HP :"
+                label="age :"
+              />
+            </FormGroup>
+          </Col>
+          <Col md={6}>
+            <FormGroup>
+              <Field
+                type="text"
+                name="photo"
+                component={renderField}
+                label="photo :"
               />
             </FormGroup>
           </Col>

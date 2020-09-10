@@ -30,10 +30,10 @@ class EditContact extends Component {
       } else {
         swal(
           "User Updated!",
-          "Nama : " +
-            this.props.getResponDataUser.nama +
-            " , phone : " +
-            this.props.getResponDataUser.nohp,
+          "firstName : " +
+            this.props.getResponDataUser.firstName +
+            " , lastName : " +
+            this.props.getResponDataUser.lastName,
           "success"
         );
       }
